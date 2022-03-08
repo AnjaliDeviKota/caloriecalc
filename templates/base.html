@@ -40,9 +40,9 @@
                   
               <li class="nav-item"><a class="nav-link {% if url_name == 'select_food' %} active{% endif %}" href={% url "select_food" %}>Select Food</a></li>
               
-              {% if request.user.is_staff %}
+             
               <li class="nav-item"><a class="nav-link {% if url_name == 'add_food' %} active{% endif %}" href={% url "add_food" %}>Add Food</a></li>
-              {% endif %}
+            
               {% endwith %}
             </ul>
             </div>
